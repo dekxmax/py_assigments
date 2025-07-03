@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 print("QUESTION NO 1. Replace NaN with 0 and interchange rows and columns")
 arr1 = np.array([[6, -8, 73, -110], [np.nan, -8, 0, 94]])
 arr1 = np.nan_to_num(arr1, nan=0)
-arr1 = arr1[:, [2, 0, 1, 3]]  # Interchange all columns (example: reorder as 3,1,2,4)
-arr1 = arr1[[1, 0], :]        # Interchange rows
+arr1 = arr1[:, [2, 0, 1, 3]] 
+arr1 = arr1[[1, 0], :]        
 print(arr1)
 
 print("\nQUESTION NO 2. Move axes of 3D array to new positions")

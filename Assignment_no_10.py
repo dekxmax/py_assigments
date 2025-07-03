@@ -58,11 +58,9 @@ A = np.array([[1, -2, 3],
               [2, -5, 5]])
 B = np.array([9, -6, 17])
 
-# Use least squares instead of solve
 solution, residuals, rank, s = np.linalg.lstsq(A, B, rcond=None)
 print("Solution using least squares:", solution)
 
-# Optional: inverse method if matrix is invertible
 try:
     inv_method = np.dot(np.linalg.inv(A), B)
     print("Solution using inverse matrix:", inv_method)
